@@ -1,6 +1,5 @@
-//import "pixi.js/app"
-//import "pixi.js/filters"
-//import "pixi.js/graphics"
+import "pixi.js/app"
+import "pixi.js/graphics"
 
 import { useRef } from "react"
 
@@ -26,13 +25,7 @@ const PixiImage = () => {
 
   return (
     <div>
-      <Application
-        ref={appRef}
-        width={800}
-        height={600}
-        onInit={onAppInit}
-        //manageImports={false}
-      >
+      <Application ref={appRef} width={800} height={600} onInit={onAppInit} manageImports={false}>
         <RotatingBunny />
       </Application>
     </div>
